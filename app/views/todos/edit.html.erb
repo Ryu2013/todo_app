@@ -1,12 +1,12 @@
-<% content_for :title, "Editing todo" %>
+<% content_for :title, t('todos.edit.title') %>
 
-<h1>Editing todo</h1>
+<h1><%= t('todos.edit.title') %></h1>
 
 <%= render "form", todo: @todo %>
 
 <br>
 
 <div>
-  <%= link_to "Show this todo", @todo %> |
-  <%= link_to "Back to todos", todos_path %>
+  <%= link_to t('todos.edit.show'), @todo %> |
+  <%= link_to t('todos.edit.back'), todos_path %>
 </div>

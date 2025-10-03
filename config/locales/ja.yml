@@ -1,0 +1,34 @@
+ja:
+  activerecord:
+    models:
+      todo: タスク
+    attributes:
+      todo:
+        Banana: バナナ
+  helpers:
+    submit:
+      todo:
+        create: タスクを作成する
+        update: タスクを更新する
+  todos:
+    notice:
+      created: タスクを作成しました。
+      updated: タスクを更新しました。
+      destroyed: タスクを削除しました。
+    index:
+      title: タスク一覧
+      new: 新しいタスクを作成
+      show: 詳細を見る
+    show:
+      edit: タスクを編集
+      back: 一覧に戻る
+      destroy: タスクを削除
+    edit:
+      title: タスクを編集
+      show: 詳細を見る
+      back: 一覧に戻る
+    new:
+      title: 新規タスク
+      back: 一覧に戻る
+    form:
+      error_heading: "%{count}件のエラーが発生したため、このタスクは保存できません。"
