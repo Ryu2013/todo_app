@@ -29,8 +29,6 @@ services:
       - .:/app
       - node_modules:/app/node_modules
       - bundle_data:/usr/local/bundle
-      - ${HOME}/.ssh:/root/.ssh
-      - ${HOME}/.gitconfig:/root/.gitconfig
     depends_on:
       db:
         condition: service_healthy
