@@ -1,1 +1,85 @@
-<h2>CSS練習用</h2>
+<% content_for :head do %>
+  <%= stylesheet_link_tag "home/css" %>
+<% end %>
+
+<header>
+  <%= image_tag "amsterdam.jpg", alt: "トップページ" %>
+  <div class="top-title">
+    OSHARE<br>
+    DESIGN<br>
+    HOMEPAGE
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li>About</li>
+    <li>Room</li>
+    <li>Plan</li>
+    <li>Access</li>
+    <li>Gallery</li>
+  </ul>
+</nav>
+
+<div data-controller="menu" data-action="click->menu#toggle" class="menubutton">
+  <i></i>
+  <i></i>
+  <i></i>
+</div>
+
+<main>
+  <h1>オシャレな旅館のホームページ</h1>
+  <div class="plan">
+    <%= image_tag "cheese.jpg", alt: "BARの写真" %>
+    <div class="comments">
+      <h2>木で統一された雰囲気のあるBAR</h2>
+      <p>
+        宿泊される方が集まるBAR。海外から訪れる方が多く国際交流ができる場になっています。150種類以上のお酒がお楽しみいただけます。
+      </p>
+      <div>※20歳以上の方のみご利用出来ます。</div>
+    </div>
+  </div>
+  <div class="plan">
+    <%= image_tag "hu-sha.jpg", alt: "和風の部屋の写真" %>
+    <div class="comments">
+      <h2>日本らしい古風のお部屋</h2>
+      <p>
+        昔ながらの日本の雰囲気でゆっくりくつろげる空間。お部屋ごとに露天風呂をご用意しております。いつでもご利用下さいませ。
+      </p>
+    </div>
+  </div>
+</main>
+
+<aside>
+  <h2>News</h2>
+  <div class="news">
+    <div class="topic">
+      <div class="time">2019/10/01</div>
+      <div>消費税の増税に伴う料金の変更のお知らせ 増税後ver</div>
+    </div>
+    <div class="topic">
+      <div class="time">2019/09/23</div>
+      <div>台風に関する営業時間の変更のお知らせ</div>
+    </div>
+    <div class="topic">
+      <div class="time">2019/08/10</div>
+      <div>消費税の増税に伴う料金のお知らせ</div>
+    </div>
+    <div class="topic">
+      <div class="time">2019/07/04</div>
+      <div>公式instagramがオープン</div>
+    </div>
+    <div class="topic">
+      <div class="time">2019/07/03</div>
+      <div>公式Twitterがオープン</div>
+    </div>
+    <div class="topic">
+      <div class="time">2019/06/20</div>
+      <div>お部屋をリニューアルしました</div>
+    </div>
+  </div>
+</aside>
+
+<footer>
+&copy; 2019 OSHARE HOMEPAGE
+</footer>
